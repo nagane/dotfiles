@@ -53,3 +53,9 @@ imap <C-f> <C-x><C-o>
 
 "for mac
 set clipboard+=unnamed
+
+"F5で文字をインサート
+map <F5> ggO#!/bin/bash<ESC>
+
+" バックスペースで特殊記号も削除可能に(mac vim7.4対応)
+set backspace=indent,eol,start 
