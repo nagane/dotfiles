@@ -59,3 +59,4 @@ map <F5> ggO#!/bin/bash<ESC>
 
 " バックスペースで特殊記号も削除可能に(mac vim7.4対応)
 set backspace=indent,eol,start 
+
