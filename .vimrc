@@ -78,6 +78,7 @@ NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'jpalardy/vim-slime'
 NeoBundle 'scrooloose/syntastic'
+NeoBundle 'ervandew/supertab'
 " rails plugin
 NeoBundleLazy 'alpaca-tc/vim-endwise.git', {
       \ 'autoload' : {
