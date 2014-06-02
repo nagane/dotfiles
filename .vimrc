@@ -59,9 +59,6 @@ map <F4> ggOrequire 'spec_helper'<ESC>
 " バックスペースで特殊記号も削除可能に(mac vim7.4対応)
 set backspace=indent,eol,start 
 
-
-
-set nocompatible               " be iMproved
 filetype off
 
 if has('vim_starting')
@@ -88,3 +85,5 @@ NeoBundleLazy 'alpaca-tc/vim-endwise.git', {
 
 filetype plugin indent on     " required!
 filetype indent on
+
+set nocompatible               " be iMproved
