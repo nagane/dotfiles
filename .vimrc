@@ -16,9 +16,7 @@ set hidden
 "インクリメンタルサーチを行う
 set incsearch
 ""タブ文字、行末など不可視文字を表示する
-"set list
-"listで表示される文字のフォーマットを指定する
-"set listchars=eol:$,tab:>\ ,extends:<
+set list
 ""行番号を表示する
 set number
 "シフト移動幅
@@ -44,12 +42,12 @@ let g:netrw_alto = 1
 "関数補完キーバインド変更
 imap <C-f> <C-x><C-o>
 "括弧とか入れたら後ろの括弧が自動的に挿入されてカーソルが左に一個戻る
-"imap { {}<Left>
-"imap [ []<Left>
-"imap ( ()<Left>
-"imap "" ""<Left>
-"imap '' ''<Left>
-"imap < <><Left>
+imap { {}<Left>
+imap [ []<Left>
+imap ( ()<Left>
+imap "" ""<Left>
+imap '' ''<Left>
+imap < <><Left>
 
 "for mac
 set clipboard+=unnamed
