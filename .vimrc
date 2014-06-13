@@ -150,3 +150,10 @@ function! s:GetHighlight(hi)
   let hl = substitute(hl, 'xxx', '', '')
   return hl
 endfunction
+
+""""""""""""""""""""""""""""""
+" vim mac導入
+""""""""""""""""""""""""""""""
+if has('gui_macvim')
+  colorscheme desert
+endif
