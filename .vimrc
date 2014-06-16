@@ -88,6 +88,10 @@ NeoBundleLazy 'alpaca-tc/vim-endwise.git', {
       \   'insert' : 1,
       \ }}
 ""NeoBundle 'https://bitbucket.org/kovisoft/slimv'
+NeoBundle 'mattn/gist-vim'
+let g:gist_show_privates = 1
+let g:gist_post_private = 1
+NeoBundle 'mattn/webapi-vim'
 
 filetype plugin indent on     " required!
 filetype indent on
