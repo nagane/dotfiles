@@ -76,6 +76,9 @@ NeoBundle 'Shougo/neosnippet'
 NeoBundle 'jpalardy/vim-slime'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'ervandew/supertab'
+" Markdown Plugin
+NeoBundle 'plasticboy/vim-markdown'
+au BufRead,BufNewFile *.md set filetype=markdown
 " ファイルオープンを便利にする
 NeoBundle 'Shougo/unite.vim'
 " Unite.vimで最近使ったファイルを表示できるようになる

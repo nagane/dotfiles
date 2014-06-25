@@ -1,1 +1,4 @@
+#大文字小文字を区別しないで補完出来るようにする
 set completion-ignore-case on
+#beep音を消す
+set bell-style none
