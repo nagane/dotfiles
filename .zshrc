@@ -14,7 +14,7 @@ SAVEHIST=1000000
 # 1行表示
 # PROMPT="%~ %# "
 # 2行表示
-PROMPT="%{${fg[red]}%}[%n@%m]%{${reset_color}%} %~
+PROMPT="%{${fg[green]}%}[%n@%m]%{${reset_color}%} %~
 %# "
  
  
@@ -95,6 +95,7 @@ alias sudo='sudo '
 case ${OSTYPE} in
     darwin*)
         #Mac用の設定
+        export LSCOLORS=gxfxcxdxbxegedabagacad
         export CLICOLOR=1
         alias ls='ls -G -F'
         ;;
