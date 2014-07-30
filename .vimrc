@@ -1,6 +1,6 @@
 syntax on
 "カラースキーマを設定
-colorscheme desert
+"colorscheme desert
 "新しい行のインデントを現在行と同じにする
 set autoindent
 ""バックアップファイルを作るディレクトリ
@@ -61,6 +61,14 @@ set backspace=indent,eol,start
 
 filetype off
 
+"""""""""""""""""""""""""""
+" golang 用設定
+"""""""""""""""""""""""""""
+set rtp +=$GOROOT/misc/vim
+exe "set rtp+=".globpath($GOPATH, "src/github.com/nsf/gocode/vim")
+" 補完内容を詳細に表示
+set completeopt=menu,preview
+
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim
   call neobundle#rc(expand('~/.vim/bundle/'))
@@ -95,6 +103,8 @@ NeoBundle 'mattn/gist-vim'
 let g:gist_show_privates = 1
 let g:gist_post_private = 1
 NeoBundle 'mattn/webapi-vim'
+" for golang
+NeoBundle 'Blackrush/vim-gocode'
 
 filetype plugin indent on     " required!
 filetype indent on
@@ -165,6 +175,3 @@ if has('gui_macvim')
   colorscheme desert
 endif
 
-" golang用にランタイムパス追加
-
-set rtp +=$GOROOT/misc/vim
