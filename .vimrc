@@ -164,3 +164,7 @@ endfunction
 if has('gui_macvim')
   colorscheme desert
 endif
+
+" golang用にランタイムパス追加
+
+set rtp +=$GOROOT/misc/vim
