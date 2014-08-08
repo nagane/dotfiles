@@ -111,6 +111,26 @@ filetype indent on
 
 set nocompatible               " be iMproved
 
+"""""""""""""""""""""""
+" ligthline
+"""""""""""""""""""""""
+
+NeoBundle 'itchyny/lightline.vim'
+
+" need brew install --use-gcc fontforge
+let g:Powerline_symbols = 'fancy'
+
+set laststatus=2
+set t_Co=256 
+
+let g:lightline = {
+\ 'colorscheme': 'wombat',
+      \ 'component': {
+      \   'readonly': '%{&readonly?"⭤":""}',
+      \ },
+      \ 'separator': { 'left': '⮀', 'right': '⮂' },
+      \ 'subseparator': { 'left': '⮁', 'right': '⮃' }
+      \ }
 
 """"""""""""""""""""""""
 "  Unit.vimの設定
