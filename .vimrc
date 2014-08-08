@@ -75,7 +75,14 @@ if has('vim_starting')
 endif
 " originalrepos on github
 NeoBundle 'Shougo/neobundle.vim'
-NeoBundle 'Shougo/vimproc'
+NeoBundle 'Shougo/vimproc.vim', {$
+      \ 'build' : {$
+      \     'windows' : 'tools\\update-dll-mingw',$
+      \     'cygwin' : 'make -f make_cygwin.mak',$
+      \     'mac' : 'make -f make_mac.mak',$
+      \     'unix' : 'make -f make_unix.mak',$
+      \    },$
+      \ }$
 NeoBundle 'VimClojure'
 NeoBundle 'Shougo/vimshell'
 NeoBundle 'Shougo/unite.vim'
@@ -88,7 +95,7 @@ NeoBundle 'ervandew/supertab'
 NeoBundle 'plasticboy/vim-markdown'
 au BufRead,BufNewFile *.md set filetype=markdown
 " ファイルオープンを便利にする
-NeoBundle 'Shougo/unite.vim'
+ NeoBundle 'Shougo/unite.vim'
 " Unite.vimで最近使ったファイルを表示できるようになる
 NeoBundle 'Shougo/neomru.vim'
 " ファイルのtree表示
