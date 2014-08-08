@@ -75,14 +75,7 @@ if has('vim_starting')
 endif
 " originalrepos on github
 NeoBundle 'Shougo/neobundle.vim'
-NeoBundle 'Shougo/vimproc.vim', {$
-      \ 'build' : {$
-      \     'windows' : 'tools\\update-dll-mingw',$
-      \     'cygwin' : 'make -f make_cygwin.mak',$
-      \     'mac' : 'make -f make_mac.mak',$
-      \     'unix' : 'make -f make_unix.mak',$
-      \    },$
-      \ }$
+NeoBundle 'Shougo/vimproc.vim'
 NeoBundle 'VimClojure'
 NeoBundle 'Shougo/vimshell'
 NeoBundle 'Shougo/unite.vim'
