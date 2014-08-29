@@ -84,6 +84,7 @@ NeoBundle 'Shougo/vimshell'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/neosnippet'
+NeoBundle "Shougo/neosnippet-snippets"
 NeoBundle 'jpalardy/vim-slime'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'ervandew/supertab'
@@ -91,7 +92,7 @@ NeoBundle 'ervandew/supertab'
 NeoBundle 'plasticboy/vim-markdown'
 au BufRead,BufNewFile *.md set filetype=markdown
 " ファイルオープンを便利にする
- NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/unite.vim'
 " Unite.vimで最近使ったファイルを表示できるようになる
 NeoBundle 'Shougo/neomru.vim'
 " ファイルのtree表示
@@ -127,13 +128,9 @@ set laststatus=2
 set t_Co=256 
 
 let g:lightline = {
-\ 'colorscheme': 'wombat',
-      \ 'component': {
-      \   'readonly': '%{&readonly?"⭤":""}',
-      \ },
-      \ 'separator': { 'left': '⮀', 'right': '⮂' },
-      \ 'subseparator': { 'left': '⮁', 'right': '⮃' }
+\ 'colorscheme': 'wombat'
       \ }
+
 
 """"""""""""""""""""""""
 "  Unit.vimの設定
