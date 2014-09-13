@@ -50,6 +50,8 @@ imap < <><Left>
 set clipboard+=unnamed
 
 "F5で文字をインサート
+nnoremap <F9> :<C-u>tabedit $MYVIMRC<CR>
+nnoremap <F10> :source  $MYVIMRC<CR>
 map <F5> ggO#!/bin/bash<ESC>
 map <F4> ggOrequire 'spec_helper'<ESC>
 
