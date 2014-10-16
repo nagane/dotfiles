@@ -103,3 +103,6 @@ case ${OSTYPE} in
         #Linux用の設定
         ;;
 esac
+
+export PATH=$HOME/.rbenv/bin:$PATH
+eval "$(rbenv init - zsh)"
