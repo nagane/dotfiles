@@ -49,11 +49,17 @@ imap < <><Left>
 "for mac
 set clipboard+=unnamed
 
+"""""""""""""""""""""""""""
+" ノーマルモードキーバインド
+"""""""""""""""""""""""""""
 "F5で文字をインサート
 nnoremap <F9> :<C-u>tabedit $MYVIMRC<CR>
 nnoremap <F10> :source  $MYVIMRC<CR>
+nnoremap <Space>n :set nonumber<CR>
+nnoremap <Space>l :set nolist<CR>
 map <F5> ggO#!/bin/bash<ESC>
 map <F4> ggOrequire 'spec_helper'<ESC>
+
 
 " バックスペースで特殊記号も削除可能に(mac vim7.4対応)
 set backspace=indent,eol,start 
