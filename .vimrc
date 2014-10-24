@@ -56,6 +56,7 @@ set clipboard+=unnamed
 nnoremap <F9> :<C-u>tabedit $MYVIMRC<CR>
 nnoremap <F10> :source  $MYVIMRC<CR>
 nnoremap <Space>n :set nonumber<CR>
+nnoremap <Space>p :set paste<CR>
 nnoremap <Space>l :set nolist<CR>
 map <F5> ggO#!/bin/bash<ESC>
 map <F4> ggOrequire 'spec_helper'<ESC>
@@ -199,4 +200,3 @@ endfunction
 if has('gui_macvim')
   colorscheme desert
 endif
-
