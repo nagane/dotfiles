@@ -104,5 +104,10 @@ case ${OSTYPE} in
         ;;
 esac
 
+# rbenv
 export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init - zsh)"
+
+# quick lool alias
+
+alias ql='qlmanage -p "$@" >& /dev/null'
