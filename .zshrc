@@ -111,3 +111,4 @@ eval "$(rbenv init - zsh)"
 # quick lool alias
 
 alias ql='qlmanage -p "$@" >& /dev/null'
+alias sk='cat ~/memo/seki.md'

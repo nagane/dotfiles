@@ -97,6 +97,8 @@ NeoBundle 'ervandew/supertab'
 " Markdown Plugin
 NeoBundle 'plasticboy/vim-markdown'
 au BufRead,BufNewFile *.md set filetype=markdown
+NeoBundle 'kannokanno/previm'
+let g:previm_open_cmd = 'open -a Safari'
 " ファイルオープンを便利にする
 NeoBundle 'Shougo/unite.vim'
 " Unite.vimで最近使ったファイルを表示できるようになる
