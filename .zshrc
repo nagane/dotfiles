@@ -113,3 +113,4 @@ eval "$(rbenv init - zsh)"
 alias ql='qlmanage -p "$@" >& /dev/null'
 alias sk='cat ~/memo/seki.md'
 alias sshsakura='ssh sakura -p21101 -lnagane'
+alias sshngn='ssh ngn -lnagane'
