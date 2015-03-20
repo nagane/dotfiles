@@ -97,7 +97,7 @@ case ${OSTYPE} in
         #Mac用の設定
         export LSCOLORS=gxfxcxdxbxegedabagacad
         export CLICOLOR=1
-        alias ls='ls -G -F'
+        alias ls='ls -tr -G -F'
         ;;
     linux*)
         #Linux用の設定
@@ -112,6 +112,5 @@ eval "$(rbenv init - zsh)"
 
 alias ql='qlmanage -p "$@" >& /dev/null'
 alias sk='cat ~/memo/seki.md'
-alias sshsakura='ssh sakura -p21101 -lnagane'
 alias sshngn='ssh ngn -lnagane'
 alias ref='cd ~/Dropbox/reference'
