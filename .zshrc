@@ -112,3 +112,5 @@ eval "$(rbenv init - zsh)"
 
 alias ql='qlmanage -p "$@" >& /dev/null'
 alias sk='cat ~/memo/seki.md'
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
