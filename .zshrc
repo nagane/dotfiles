@@ -97,7 +97,7 @@ case ${OSTYPE} in
         #Mac用の設定
         export LSCOLORS=gxfxcxdxbxegedabagacad
         export CLICOLOR=1
-        alias ls='ls -tr -G -F'
+        alias ls='ls -G -F'
         ;;
     linux*)
         #Linux用の設定
