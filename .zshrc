@@ -31,7 +31,10 @@ zstyle ':zle:*' word-style unspecified
 # 補完機能を有効にする
 autoload -Uz compinit
 compinit
- 
+
+# 候補をc-f,c-bとかで選べるようにする
+zstyle ':completion:*:default' menu select=2
+
 # 補完で小文字でも大文字にマッチさせる
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
  
@@ -111,6 +114,5 @@ eval "$(rbenv init - zsh)"
 # quick lool alias
 
 alias ql='qlmanage -p "$@" >& /dev/null'
-alias sk='cat ~/memo/seki.md'
 alias sshngn='ssh ngn -lnagane'
 alias ref='cd ~/Dropbox/reference'
