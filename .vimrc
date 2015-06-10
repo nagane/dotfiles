@@ -2,6 +2,8 @@
 " base setting
 """"""""""""""""
 syntax on
+"検索した単語をハイライト
+set hlsearch
 "カラースキーマを設定
 colorscheme desert
 "新しい行のインデントを現在行と同じにする
