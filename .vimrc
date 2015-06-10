@@ -206,3 +206,11 @@ endfunction
 if has('gui_macvim')
   colorscheme desert
 endif
+
+" 80カラムの目安表示
+
+if (exists('+colorcolumn'))
+    set colorcolumn=80
+    highlight ColorColumn ctermbg=9
+endif
+
