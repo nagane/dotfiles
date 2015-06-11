@@ -82,7 +82,9 @@ set completeopt=menu,preview
 """"""""""""""""""""
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim
-  call neobundle#rc(expand('~/.vim/bundle/'))
+  call neobundle#begin(expand('~/.vim/bundle/'))
+  NeoBundleFetch 'Shougo/neobundle.vim'
+  call neobundle#end()
 endif
 " originalrepos on github
 NeoBundle 'Shougo/neobundle.vim'
@@ -204,3 +206,11 @@ endfunction
 if has('gui_macvim')
   colorscheme desert
 endif
+
+" 80カラムの目安表示
+
+if (exists('+colorcolumn'))
+    set colorcolumn=80
+    highlight ColorColumn ctermbg=9
+endif
+

@@ -125,5 +125,9 @@ fi
 # quick lool alias
 
 alias ql='qlmanage -p "$@" >& /dev/null'
+alias sk='cat ~/memo/seki.md'
 alias sshngn='ssh ngn -lnagane'
 alias ref='cd ~/Dropbox/reference'
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
