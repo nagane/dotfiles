@@ -1,6 +1,14 @@
 """"""""""""""""
 " base setting
 """"""""""""""""
+
+" Leaderをスペースに
+let mapleader = "\<Space>"
+nnoremap <Leader>w :w<CR>
+nnoremap <CR> G
+nnoremap <BS> gg
+nmap <Leader><Leader> V
+
 syntax on
 "検索した単語をハイライト
 set hlsearch
@@ -125,6 +133,8 @@ NeoBundle 'Blackrush/vim-gocode'
 filetype plugin indent on     " required!
 filetype indent on
 
+
+
 set nocompatible               " be iMproved
 
 """""""""""""""""""""""
@@ -213,4 +223,3 @@ if (exists('+colorcolumn'))
     set colorcolumn=80
     highlight ColorColumn ctermbg=9
 endif
-
