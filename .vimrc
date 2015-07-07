@@ -65,7 +65,7 @@ set clipboard+=unnamed
 "F5で文字をインサート
 nnoremap <F9> :<C-u>tabedit $MYVIMRC<CR>
 nnoremap <F10> :source  $MYVIMRC<CR>
-nnoremap <Leader>p :setlocal number!<CR>
+nnoremap <Leader>n :setlocal number!<CR>
 nnoremap <Leader>l :setlocal list!<CR>
 nnoremap <Leader>p :setlocal paste!<CR>
 
