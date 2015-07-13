@@ -5,6 +5,7 @@
 " Leaderをスペースに
 let mapleader = "\<Space>"
 nnoremap <Leader>w :w<CR>
+nnoremap <Leader>q :q<CR>
 nnoremap <CR> G
 nnoremap <BS> gg
 nmap <Leader><Leader> V
