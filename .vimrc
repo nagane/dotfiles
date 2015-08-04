@@ -69,6 +69,7 @@ nnoremap <F10> :source  $MYVIMRC<CR>
 nnoremap <Leader>n :setlocal number!<CR>
 nnoremap <Leader>l :setlocal list!<CR>
 nnoremap <Leader>p :setlocal paste!<CR>
+nnoremap <Leader>e :!ruby %<CR>
 
 
 map <F5> ggO#!/bin/bash<ESC>

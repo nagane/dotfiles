@@ -122,6 +122,10 @@ if [ -f ~/.zsh/auto-fu.zsh ]; then
     zstyle ':completion:*' completer _oldlist _complete
 fi
 
+if [ -f ~/.zsh/alias.zsh ]; then
+  source ~/.zsh/alias.zsh
+fi
+
 # quick lool alias
 
 alias ql='qlmanage -p "$@" >& /dev/null'
@@ -131,3 +135,5 @@ alias ref='cd ~/Dropbox/reference'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+ZSHHOME="${HOME}/.zsh"
