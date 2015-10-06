@@ -15,6 +15,9 @@ syntax on
 set hlsearch
 "カラースキーマを設定
 colorscheme desert
+"行番号の色変更
+set cursorline
+autocmd ColorScheme * highlight LineNr ctermfg=239
 "新しい行のインデントを現在行と同じにする
 set autoindent
 "タブの代わりに空白文字を挿入する
@@ -227,3 +230,7 @@ if (exists('+colorcolumn'))
     set colorcolumn=80
     highlight ColorColumn ctermbg=236
 endif
+
+"なぜか後ろの方にしないと上手く動かない。なんでや。
+hi clear CursorLine
+hi CursorLineNr term=bold   cterm=NONE ctermfg=229 ctermbg=NONE
