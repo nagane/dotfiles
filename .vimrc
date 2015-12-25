@@ -16,6 +16,9 @@ nnoremap <S-Right> <C-w>><CR>
 nnoremap <S-Up>    <C-w>-<CR>
 nnoremap <S-Down>  <C-w>+<CR>
 
+" sudo保存
+cabbr w!! w !sudo tee > /dev/null %
+
 syntax on
 "検索した単語をハイライト
 set hlsearch
