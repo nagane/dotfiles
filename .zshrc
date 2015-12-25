@@ -14,7 +14,7 @@ SAVEHIST=1000000
 # 1行表示
 # PROMPT="%~ %# "
 # 2行表示
-PROMPT="${fg[yellow]}ξξ${reset_color}＊'ヮ')${fg[yellow]}ξ${reset_color}%{${fg[green]}%}[%n@%m]%{${reset_color}%} ${fg[red]}❤${reset_color} (ӦｖӦ｡) %~
+PROMPT="${fg[yellow]}ξξ${reset_color}＊'ヮ')${fg[yellow]}ξ ${reset_color}%{${fg[green]}%}[%n@%m]%{${reset_color}%} ${fg[red]}❤${reset_color} (ӦｖӦ｡) %~
 %# "
  
 # 単語の区切り文字を指定する
@@ -107,7 +107,7 @@ case ${OSTYPE} in
 esac
 
 # rbenv
-export PATH=$HOME/.rbenv/bin:$PATH
+export PATH=$HOME/.rbenv/bin:$PATH:$HOME/.go/bin
 eval "$(rbenv init - zsh)"
 
 # install auto-fu.sh git://github.com/hchbaw/auto-fu.zsh.git

@@ -10,6 +10,12 @@ nnoremap <CR> G
 nnoremap <BS> gg
 nmap <Leader><Leader> V
 
+" window幅の調整
+nnoremap <S-Left>  <C-w><<CR>
+nnoremap <S-Right> <C-w>><CR>
+nnoremap <S-Up>    <C-w>-<CR>
+nnoremap <S-Down>  <C-w>+<CR>
+
 syntax on
 "検索した単語をハイライト
 set hlsearch
