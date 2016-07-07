@@ -9,6 +9,9 @@ nnoremap <Leader>q :q<CR>
 nnoremap <CR> G
 nnoremap <BS> gg
 nmap <Leader><Leader> V
+let weeks = [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ]
+let wday = strftime("%w")
+inoremap <expr> ,dd strftime('%Y-%m-%d ').weeks[wday]
 
 " window幅の調整
 nnoremap <S-Left>  <C-w><<CR>
