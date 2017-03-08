@@ -125,6 +125,7 @@ NeoBundle "Shougo/neosnippet-snippets"
 NeoBundle 'jpalardy/vim-slime'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'ervandew/supertab'
+NeoBundle 'glidenote/memolist.vim'
 " Markdown Plugin
 NeoBundle 'plasticboy/vim-markdown'
 au BufRead,BufNewFile *.md set filetype=markdown
