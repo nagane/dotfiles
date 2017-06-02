@@ -1,4 +1,4 @@
-﻿import sys
+import sys
 import os
 import datetime
 import subprocess
@@ -14,3 +14,4 @@ def configure(keymap):
     keymap_global["LAlt-J"] = "Down"
     keymap_global["LAlt-K"] = "Up"
     keymap_global["LAlt-L"] = "Right"
+

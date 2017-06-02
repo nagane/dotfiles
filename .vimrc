@@ -18,6 +18,7 @@ nnoremap <S-Left>  <C-w><<CR>
 nnoremap <S-Right> <C-w>><CR>
 nnoremap <S-Up>    <C-w>-<CR>
 nnoremap <S-Down>  <C-w>+<CR>
+nnoremap <S-Down>  <C-w>+<CR>
 
 " sudo保存
 cabbr w!! w !sudo tee > /dev/null %
@@ -153,9 +154,21 @@ NeoBundle 'Blackrush/vim-gocode'
 filetype plugin indent on     " required!
 filetype indent on
 
-
-
 set nocompatible               " be iMproved
+
+"""""""""""
+" memolist
+" doc https://github.com/glidenote/memolist.vim
+"""""""""""
+
+let g:memolist_path = "~/Dropbox/memo"
+let g:memolist_template_dir_path = "~/Dropbox/memo/memotemplate"
+let g:memolist_memo_suffix = "md"
+let g:memolist_unite = 1
+
+nnoremap <Leader>mn :MemoNew<CR>
+nnoremap <Leader>ml :MemoList<CR>
+nnoremap <Leader>mg :MemoGrep<CR>
 
 """""""""""""""""""""""
 " ligthline
