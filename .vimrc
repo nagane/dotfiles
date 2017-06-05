@@ -185,7 +185,6 @@ let g:lightline = {
 \ 'colorscheme': 'wombat'
       \ }
 
-
 """"""""""""""""""""""""
 "  Unit.vimの設定
 """"""""""""""""""""""""
@@ -257,5 +256,4 @@ if (exists('+colorcolumn'))
 endif
 
 "なぜか後ろの方にしないと上手く動かない。なんでや。
-hi clear CursorLine
-hi CursorLineNr term=bold   cterm=NONE ctermfg=229 ctermbg=NONE
+hi clear CursorLine hi CursorLineNr term=bold   cterm=NONE ctermfg=229 ctermbg=NONE
