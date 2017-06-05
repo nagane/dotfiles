@@ -112,44 +112,45 @@ if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim
   call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundleFetch 'Shougo/neobundle.vim'
+  " originalrepos on github
+  NeoBundle 'Shougo/neobundle.vim'
+  NeoBundle 'Shougo/vimproc.vim'
+  NeoBundle 'VimClojure'
+  NeoBundle 'Shougo/vimshell'
+  NeoBundle 'Shougo/unite.vim'
+  NeoBundle 'Shougo/neocomplcache'
+  NeoBundle 'Shougo/neosnippet'
+  NeoBundle "Shougo/neosnippet-snippets"
+  NeoBundle 'jpalardy/vim-slime'
+  NeoBundle 'scrooloose/syntastic'
+  NeoBundle 'ervandew/supertab'
+  NeoBundle 'glidenote/memolist.vim'
+  " Markdown Plugin
+  NeoBundle 'plasticboy/vim-markdown'
+  au BufRead,BufNewFile *.md set filetype=markdown
+  NeoBundle 'kannokanno/previm'
+  let g:previm_open_cmd = 'open -a Safari'
+  " ファイルオープンを便利にする
+  NeoBundle 'Shougo/unite.vim'
+  " Unite.vimで最近使ったファイルを表示できるようになる
+  NeoBundle 'Shougo/neomru.vim'
+  " ファイルのtree表示
+  NeoBundle 'scrooloose/nerdtree'
+  " rails plugin
+  NeoBundleLazy 'alpaca-tc/vim-endwise.git', {
+        \ 'autoload' : {
+        \   'insert' : 1,
+        \ }}
+  ""NeoBundle 'https://bitbucket.org/kovisoft/slimv'
+  NeoBundle 'mattn/gist-vim'
+  let g:gist_show_privates = 1
+  let g:gist_post_private = 1
+  NeoBundle 'mattn/webapi-vim'
+  " for golang
+  NeoBundle 'Blackrush/vim-gocode'
+  NeoBundle 'itchyny/lightline.vim'
   call neobundle#end()
 endif
-" originalrepos on github
-NeoBundle 'Shougo/neobundle.vim'
-NeoBundle 'Shougo/vimproc.vim'
-NeoBundle 'VimClojure'
-NeoBundle 'Shougo/vimshell'
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/neocomplcache'
-NeoBundle 'Shougo/neosnippet'
-NeoBundle "Shougo/neosnippet-snippets"
-NeoBundle 'jpalardy/vim-slime'
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'ervandew/supertab'
-NeoBundle 'glidenote/memolist.vim'
-" Markdown Plugin
-NeoBundle 'plasticboy/vim-markdown'
-au BufRead,BufNewFile *.md set filetype=markdown
-NeoBundle 'kannokanno/previm'
-let g:previm_open_cmd = 'open -a Safari'
-" ファイルオープンを便利にする
-NeoBundle 'Shougo/unite.vim'
-" Unite.vimで最近使ったファイルを表示できるようになる
-NeoBundle 'Shougo/neomru.vim'
-" ファイルのtree表示
-NeoBundle 'scrooloose/nerdtree'
-" rails plugin
-NeoBundleLazy 'alpaca-tc/vim-endwise.git', {
-      \ 'autoload' : {
-      \   'insert' : 1,
-      \ }}
-""NeoBundle 'https://bitbucket.org/kovisoft/slimv'
-NeoBundle 'mattn/gist-vim'
-let g:gist_show_privates = 1
-let g:gist_post_private = 1
-NeoBundle 'mattn/webapi-vim'
-" for golang
-NeoBundle 'Blackrush/vim-gocode'
 
 filetype plugin indent on     " required!
 filetype indent on
@@ -173,8 +174,6 @@ nnoremap <Leader>mg :MemoGrep<CR>
 """""""""""""""""""""""
 " ligthline
 """""""""""""""""""""""
-
-NeoBundle 'itchyny/lightline.vim'
 
 " need brew install --use-gcc fontforge
 let g:Powerline_symbols = 'fancy'
