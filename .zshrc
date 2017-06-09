@@ -137,3 +137,8 @@ alias g='cd `ls -d ~/project/* |peco`'
 export PATH="/usr/local/heroku/bin:$PATH"
 
 ZSHHOME="${HOME}/.zsh"
+
+
+# inport golang bin
+
+export PATH=$HOME/go/bin:$PATH
