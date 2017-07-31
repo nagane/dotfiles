@@ -131,7 +131,7 @@ alias ql='qlmanage -p "$@" >& /dev/null'
 alias sk='cat ~/memo/seki.md'
 alias sshngn='ssh ngn -lnagane'
 alias ref='cd ~/Dropbox/reference'
-alias g='cd `ls -d ~/project/* |peco`'
+alias g='cd `ls -d ~/project/* ~/go/src/* |peco`'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -140,5 +140,7 @@ ZSHHOME="${HOME}/.zsh"
 
 
 # inport golang bin
-
 export PATH=$HOME/go/bin:$PATH
+
+# need glide setting
+export GO15VENDOREXPERIMENT=1

@@ -39,8 +39,6 @@ set expandtab
 set hidden
 "インクリメンタルサーチを行う
 set incsearch
-""タブ文字、行末など不可視文字を表示する
-set list
 ""行番号を表示する
 set number
 "シフト移動幅
