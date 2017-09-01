@@ -253,6 +253,9 @@ if (exists('+colorcolumn'))
     highlight ColorColumn ctermbg=236
 endif
 
+" vue 対応
+autocmd BufNewFile,BufRead *.vue set filetype=html
+
 "なぜか後ろの方にしないと上手く動かない。なんでや。
 hi clear CursorLine 
 hi CursorLineNr term=bold   cterm=NONE ctermfg=229 ctermbg=NONE

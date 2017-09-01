@@ -131,7 +131,7 @@ alias ql='qlmanage -p "$@" >& /dev/null'
 alias sk='cat ~/memo/seki.md'
 alias sshngn='ssh ngn -lnagane'
 alias ref='cd ~/Dropbox/reference'
-alias g='cd `ls -d ~/project/* ~/go/src/* |peco`'
+alias g='cd `ls -d ~/project/* ~/go/src/* ~/go/src/github.com/dreampirates-apps/* |peco`'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -144,3 +144,4 @@ export PATH=$HOME/go/bin:$PATH
 
 # need glide setting
 export GO15VENDOREXPERIMENT=1
+export GOPATH=~/go
