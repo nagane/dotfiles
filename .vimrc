@@ -98,7 +98,9 @@ filetype off
 """""""""""""""""""""""""""
 " golang 用設定
 """""""""""""""""""""""""""
-set rtp +=$GOROOT/misc/vim
+" vim8系だと下記コードでめっちゃエラー吐くのでコメントアウト
+" ここGOPATHに変更しても問題なさそうだけどどうなんだろう
+" set rtp +=$GOROOT/misc/vim
 exe "set rtp+=".globpath($GOPATH, "src/github.com/nsf/gocode/vim")
 " 補完内容を詳細に表示
 set completeopt=menu,preview
