@@ -145,3 +145,17 @@ export PATH=$HOME/go/bin:$PATH
 # need glide setting
 export GO15VENDOREXPERIMENT=1
 export GOPATH=~/go
+export AWS_DEFAULT_PROFILE=cacco-dev
+
+setopt nonomatch
+
+if [ -d ~/.ssh/conf.d/ ]; then
+  function peco-sshconfig-ssh() {
+    local host=$(cat ~/.ssh/conf.d/ssh_config |egrep "^Host" |awk '{print $2}' |peco)
+    if [ -n "$host" ]; then
+      echo "ssh $host"
+      ssh $host
+    fi
+   }
+   alias s='peco-sshconfig-ssh'
+fi

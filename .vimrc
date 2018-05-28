@@ -264,6 +264,10 @@ endif
 " vue 対応
 autocmd BufNewFile,BufRead *.vue set filetype=html
 
+" pep8準拠
+
+"let g:syntastic_python_checkers = ['pyflakes', 'pep8']
+
 "なぜか後ろの方にしないと上手く動かない。なんでや。
 hi clear CursorLine 
 hi CursorLineNr term=bold   cterm=NONE ctermfg=229 ctermbg=NONE
