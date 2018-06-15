@@ -162,14 +162,9 @@ set nocompatible               " be iMproved
 " doc https://github.com/glidenote/memolist.vim
 """""""""""
 
-if isdirectory("~/Dropbox/memo")
-  let g:memolist_path = "~/Dropbox/memo"
-  let g:memolist_template_dir_path = "~/Dropbox/memo/memotemplate"
-else
-  let g:memolist_path = "~/Dropbox (かっこ株式会社)/memo"
-  let g:memolist_template_dir_path = "~/Dropbox (かっこ株式会社)/memo/memotemplate"
-endif
-  
+let g:memolist_path = "~/Dropbox/memo"
+let g:memolist_template_dir_path = "~/Dropbox/memo/memotemplate"
+
 let g:memolist_memo_suffix = "md"
 let g:memolist_unite = 1
 
