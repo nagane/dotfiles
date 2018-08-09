@@ -158,3 +158,7 @@ fi
 
 export PATH=$HOME/.rbenv/bin:$HOME/.go/bin:$HOME/Library/Python/3.7/bin:$PATH
 eval "$(rbenv init - zsh)"
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
