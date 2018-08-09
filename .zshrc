@@ -106,10 +106,6 @@ case ${OSTYPE} in
         ;;
 esac
 
-# rbenv
-export PATH=$HOME/.rbenv/bin:$PATH:$HOME/.go/bin
-eval "$(rbenv init - zsh)"
-
 # install auto-fu.sh git://github.com/hchbaw/auto-fu.zsh.git
 
 if [ -f ~/.zsh/auto-fu.zsh ]; then
@@ -145,7 +141,7 @@ export PATH=$HOME/go/bin:$PATH
 # need glide setting
 export GO15VENDOREXPERIMENT=1
 export GOPATH=~/go
-export AWS_DEFAULT_PROFILE=cacco-dev
+export AWS_DEFAULT_PROFILE=default
 
 setopt nonomatch
 
@@ -159,3 +155,6 @@ if [ -d ~/.ssh/conf.d/ ]; then
    }
    alias s='peco-sshconfig-ssh'
 fi
+
+export PATH=$HOME/.rbenv/bin:$HOME/.go/bin:$HOME/Library/Python/3.7/bin:$PATH
+eval "$(rbenv init - zsh)"
