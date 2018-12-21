@@ -156,5 +156,19 @@ if [ -d ~/.ssh/conf.d/ ]; then
    alias s='peco-sshconfig-ssh'
 fi
 
-export PATH=$HOME/.rbenv/bin:$HOME/.go/bin:$PATH
-eval "$(rbenv init - zsh)"
+if [ -d ~/.rbenv ]; then
+  eval "$(rbenv init - zsh)"
+  export PATH=$HOME/.rbenv/bin:$HOME/.go/bin:$PATH
+fi
+
+if [ -d ~/.pyenv ]; then
+  # pyenv
+  export PYENV_ROOT="$HOME/.pyenv"
+  export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init -)"
+fi
+
+if [ -d ~/.nodenv ]; then
+  export PATH="$HOME/.nodenv/bin:$PATH"
+  eval "$(nodenv init -)"
+fi

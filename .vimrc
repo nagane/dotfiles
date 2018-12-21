@@ -149,6 +149,8 @@ if has('vim_starting')
   " for golang
   NeoBundle 'Blackrush/vim-gocode'
   NeoBundle 'itchyny/lightline.vim'
+  " for type script
+  NeoBundle 'leafgarland/typescript-vim'
   call neobundle#end()
 endif
 
