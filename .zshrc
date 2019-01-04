@@ -123,9 +123,6 @@ fi
 
 # quick lool alias
 
-alias ql='qlmanage -p "$@" >& /dev/null'
-alias sk='cat ~/memo/seki.md'
-alias sshngn='ssh ngn -lnagane'
 alias ref='cd ~/Dropbox/reference'
 alias g='cd `ls -d ~/project/* ~/go/src/* |peco`'
 
