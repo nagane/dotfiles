@@ -125,6 +125,7 @@ fi
 
 alias ref='cd ~/Dropbox/reference'
 alias g='cd `ls -d ~/project/* ~/go/src/* |peco`'
+alias gitclean ='git branch | grep feature | xargs git branch -D {}'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
