@@ -151,6 +151,7 @@ if has('vim_starting')
   NeoBundle 'itchyny/lightline.vim'
   " for type script
   NeoBundle 'leafgarland/typescript-vim'
+  NeoBundle 'w0rp/ale'
   call neobundle#end()
 endif
 
@@ -264,6 +265,10 @@ autocmd BufNewFile,BufRead *.vue set filetype=html
 " pep8準拠
 
 "let g:syntastic_python_checkers = ['pyflakes', 'pep8']
+
+" ale & cfn-python-lint設定
+
+au BufRead,BufNewFile *.yaml set ft=cloudformation.yaml
 
 "なぜか後ろの方にしないと上手く動かない。なんでや。
 hi clear CursorLine 
