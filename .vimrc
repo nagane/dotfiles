@@ -100,7 +100,7 @@ filetype off
 """""""""""""""""""""""""""
 " vim8系だと下記コードでめっちゃエラー吐くのでコメントアウト
 " ここGOPATHに変更しても問題なさそうだけどどうなんだろう
-" set rtp +=$GOROOT/misc/vim
+set rtp +=$GOROOT/misc/vim
 exe "set rtp+=".globpath($GOPATH, "src/github.com/nsf/gocode/vim")
 " 補完内容を詳細に表示
 set completeopt=menu,preview
@@ -108,6 +108,8 @@ set completeopt=menu,preview
 """"""""""""""""""""
 " NeoBundle
 """"""""""""""""""""
+" Note: Skip initialization for vim-tiny or vim-small.
+if 0 | endif
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim
   call neobundle#begin(expand('~/.vim/bundle/'))
