@@ -125,7 +125,6 @@ fi
 
 alias ref='cd ~/Dropbox/reference'
 alias g='cd `ls -d ~/project/* ~/go/src/* |peco`'
-alias gitclean ='git branch | grep feature | xargs git branch -D {}'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -163,10 +162,32 @@ if [ -d ~/.pyenv ]; then
   # pyenv
   export PYENV_ROOT="$HOME/.pyenv"
   export PATH="$PYENV_ROOT/bin:$PATH"
-  eval "$(pyenv init -)"
+  eval "$(pyenv init --path)"
 fi
 
 if [ -d ~/.nodenv ]; then
   export PATH="$HOME/.nodenv/bin:$PATH"
   eval "$(nodenv init -)"
 fi
+
+if [ -d ~/.goenv ]; then
+  export GOENV_ROOT="$HOME/.goenv"
+	export PATH="$GOENV_ROOT/bin:$PATH"
+  eval "$(goenv init -)"
+fi
+
+if [ -d ~/scripts ]; then
+	export PATH="$HOME/scripts:$PATH"
+fi
+
+eval "$(direnv hook zsh)"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/s10047/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/s10047/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/s10047/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/s10047/google-cloud-sdk/completion.zsh.inc'; fi
+
+# enable jump
+
+eval "$(jump shell --bind=j)"
